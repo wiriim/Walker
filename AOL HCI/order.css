@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css2?family=Milonga&family=Nanum+Myeongjo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Milonga&family=Nanum+Myeongjo&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+}
+
+nav{
+    background-color: #3E4772;
+    padding: 15px 20px;
+    display: flex;
+    align-items: center;
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+}
+
+.logo{
+    list-style: none;
+}
+
+.logo li{
+    font-family: 'Milonga', cursive;
+    font-size: 2em;
+}
+
+.logo{
+    flex: 1;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+.menu li{
+    font-family: 'Nanum Myeongjo', serif;
+    padding: 15px 10px;
+    font-size: 1em;
+}
+
+.on{
+    border-bottom-style: solid;
+    border-bottom-width: 1px
+}
+
+.toggle{
+    font-size: 30px;
+    display: none;
+}
+
+.form-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.form{
+    width: 70%;
+    height: 70%;
+    background-color: #CBCBD4;
+    display: flex;
+}
+
+.left{
+    width: 70%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.right{
+    width: 30%;
+    height: 100%;
+}
+
+.right img{
+    height: 100%;
+    width: 100%;
+}
+
+form{
+    margin-top: 10%;
+    width: 70%;
+    height: 90%;
+}
+
+.dropdown{
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.input-field{
+    height: 10%;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.dropdown select{
+    border-radius: 15px;
+    border: 1px solid grey;
+    color: grey;
+    width: 80%;
+    height: 100%;
+    font-family: 'Nanum Myeongjo', serif;
+    font-size: 100%;
+    padding: 2%;
+}
+
+.input-field input{
+    border-radius: 15px;
+    border: 1px solid grey;
+    font-family: 'Nanum Myeongjo', serif;
+    width: 80%;
+    height: 100%;
+    font-size: 100%;
+    padding: 2%;
+}
+
+.left button{
+    border-radius: 25px;
+    border: 1px solid grey;
+    width: 80%;
+    height: 10%;
+    margin-top: 30px;
+    margin-left: 10%;
+}
+
+.sbt{
+    background-color: #3E4772;
+    color: white;
+    font-size: 100%;
+    font-family: 'Nanum Myeongjo', serif;
+    text-align: center;
+    cursor: pointer;
+}
+
+.cncl{
+    background-color: #FF0000;
+    font-size: 100%;
+    font-family: 'Nanum Myeongjo', serif;
+    text-align: center;
+    color: white;
+    cursor: pointer;
+}
+
+.input-field.success input {
+    border-color: #09c372;
+}
+
+.input-field.error input {
+    border-color: #ff3860;
+}
+
+.input-field .error {
+    color: #ff3860;
+    font-size: 100%;
+}
+
+footer{
+    font-family: 'Nanum Myeongjo', serif;
+    text-align: center;
+    background-color: #1E1E1E;
+    padding: 20px;
+    position: sticky;
+    top: 100%;
+    margin-top: 50px;
+}
+
+.bottom{
+    display: flex;
+    color: white;
+    justify-content: center;
+}
+
+.bottom li{
+    color: white;
+    list-style: none;
+    padding: 0px 15px;
+}
+
+.bottom a{
+    font-size: 1em;
+    color: white;
+    text-decoration: none;
+}
+
+footer p{
+    color: white;
+    font-size: 0.7em;
+    margin-top: 40px;
+}
+
+@media screen and (max-width: 768px){
+    nav{
+        display: block;
+        position: relative;
+        padding: 15px 20px;
+    }
+
+    .menu{
+        margin-top: 15px;
+        display: none;
+    }
+
+    .toggle{
+        position: absolute;
+        color: white;
+        right: 30px;
+        top: 41px;
+    }
+
+    .toggle input{
+        position: absolute;
+        width: 22px;
+        height: 25px;
+        left: -1px;
+        top: -10px;
+        opacity: 0;
+    }
+
+    .menu.active, .toggle{
+        display: block;
+    }
+
+    .left{
+        width: 50%;
+    }
+
+    .right{
+        width: 50%;
+    }
+
+    .dropdown select{
+        font-size: 60%;
+        height: 80%;
+    }
+
+    .input-field input{
+        font-size: 60%;
+        height: 80%;
+    }
+
+    .sbt{
+        font-size: 60%;
+    }
+
+    .cncl{
+        font-size: 60%;
+    }
+
+    .left button{
+        height: 8%;
+    }
+}

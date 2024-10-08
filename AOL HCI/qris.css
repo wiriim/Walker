@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Milonga&family=Nanum+Myeongjo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Milonga&family=Nanum+Myeongjo&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+}
+
+nav{
+    background-color: #3E4772;
+    padding: 15px 20px;
+    display: flex;
+    align-items: center;
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+}
+
+.logo{
+    list-style: none;
+}
+
+.logo li{
+    font-family: 'Milonga', cursive;
+    font-size: 2em;
+}
+
+.logo{
+    flex: 1;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+.menu li{
+    font-family: 'Nanum Myeongjo', serif;
+    padding: 15px 10px;
+    font-size: 1em;
+}
+
+.on{
+    border-bottom-style: solid;
+    border-bottom-width: 1px
+}
+
+.toggle{
+    font-size: 30px;
+    display: none;
+}
+
+footer{
+    font-family: 'Nanum Myeongjo', serif;
+    text-align: center;
+    background-color: #1E1E1E;
+    padding: 20px;
+    position: sticky;
+    top: 100%;
+    margin-top: 50px;
+}
+
+.bottom{
+    display: flex;
+    color: white;
+    justify-content: center;
+}
+
+.bottom li{
+    color: white;
+    list-style: none;
+    padding: 0px 15px;
+}
+
+.bottom a{
+    font-size: 1em;
+    color: white;
+    text-decoration: none;
+}
+
+footer p{
+    color: white;
+    font-size: 0.7em;
+    margin-top: 40px;
+}
+
+@media screen and (max-width: 768px){
+    nav{
+        display: block;
+        position: relative;
+        padding: 15px 20px;
+    }
+
+    .menu{
+        margin-top: 15px;
+        display: none;
+    }
+
+    .toggle{
+        position: absolute;
+        color: white;
+        right: 30px;
+        top: 41px;
+    }
+
+    .toggle input{
+        position: absolute;
+        width: 22px;
+        height: 25px;
+        left: -1px;
+        top: -10px;
+        opacity: 0;
+    }
+
+    .menu.active, .toggle{
+        display: block;
+    }
+}
+
+.outercont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.container{
+    width: 50%;
+    height: 80%;
+    background-color: #CBCBD4;
+}
+
+.container img{
+    width: 60%;
+    height: 70%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+}
+
+a{
+    text-decoration: none;
+}
+
+.cancel{
+    background-color: rgb(230, 70, 70);
+    width: 70%;
+    height: 8%;
+    text-align: center;
+    border-radius: 20px;
+    color: white;
+    font-size: 20px;
+    display: block;
+    margin-top: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+    border: none;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 768px){
+    .container{
+        width: 80%;
+        height: 80%;
+        background-color: #CBCBD4;
+    }
+
+    .container img{
+        width: 60%;
+        height: 50%;
+        margin-top: 20%;
+    }
+    
+    .cancel{
+        margin-top: 20%;
+        font-size: 100%;
+    }
+}

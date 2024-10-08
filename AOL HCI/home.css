@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Milonga&family=Nanum+Myeongjo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Milonga&family=Nanum+Myeongjo&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+}
+
+nav{
+    background-color: #3E4772;
+    padding: 15px 20px;
+    display: flex;
+    align-items: center;
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+}
+
+.logo{
+    list-style: none;
+}
+
+.logo li{
+    font-family: 'Milonga', cursive;
+    font-size: 2em;
+}
+
+.logo{
+    flex: 1;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+.menu li{
+    font-family: 'Nanum Myeongjo', serif;
+    padding: 15px 10px;
+    font-size: 1em;
+}
+
+.on{
+    border-bottom-style: solid;
+    border-bottom-width: 1px
+}
+
+.toggle{
+    font-size: 30px;
+    display: none;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.content p{
+    font-family: 'Milonga', cursive;
+    text-align: center;
+    font-size: 2em;
+    margin: 40px;
+}
+
+.new-arrivals{
+    display: flex;
+    flex-direction: column;
+    background-color: #E8E8E8;
+    width: 40%;
+    height: 30%;
+    justify-content: center;
+    align-items: center;
+}
+
+.new-arrivals img{
+    width: 70%;
+    margin: 30px;
+    margin-bottom: 10px;
+}
+
+.new-arrivals h2{
+    font-family: 'Nanum Myeongjo', serif;
+    font-weight: bolder;
+    font-size: 150%;
+    margin-bottom: 40px;
+}
+
+.shop-title{
+    width: 25%;
+    background-color: #1E1E1E;
+    border-radius: 50px;
+    margin-top: 60px;
+}
+
+.shop-title p{
+    font-size: 120%;
+    font-family: 'Nanum Myeongjo', serif;
+    color: white;
+    margin: 10px;
+}
+
+.shop{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.shop img{
+    margin-top: 40px;
+    padding: 10px 50px;
+    width: 100%;
+}
+
+footer{
+    font-family: 'Nanum Myeongjo', serif;
+    text-align: center;
+    background-color: #1E1E1E;
+    padding: 20px;
+    position: sticky;
+    top: 100%;
+    margin-top: 50px;
+}
+
+.bottom{
+    display: flex;
+    color: white;
+    justify-content: center;
+}
+
+.bottom li{
+    color: white;
+    list-style: none;
+    padding: 0px 15px;
+}
+
+.bottom a{
+    font-size: 1em;
+    color: white;
+    text-decoration: none;
+}
+
+footer p{
+    color: white;
+    font-size: 0.7em;
+    margin-top: 40px;
+}
+
+@media screen and (max-width: 768px){
+    nav{
+        display: block;
+        position: relative;
+        padding: 15px 20px;
+    }
+
+    .menu{
+        margin-top: 15px;
+        display: none;
+    }
+
+    .toggle{
+        position: absolute;
+        color: white;
+        right: 30px;
+        top: 41px;
+    }
+
+    .toggle input{
+        position: absolute;
+        width: 22px;
+        height: 25px;
+        left: -1px;
+        top: -10px;
+        opacity: 0;
+    }
+
+    .menu.active, .toggle{
+        display: block;
+    }
+
+    .new-arrivals{
+        width: 60%;
+        height: 40%;
+    }
+
+    .new-arrivals h2{
+        font-size: 120%;
+    }
+
+    .shop-title{
+        width: 40%;
+    }
+
+    .shop-title p{
+        font-size: 100%;
+    }
+
+    .shop img{
+        padding: 5px 15px;
+    }
+}

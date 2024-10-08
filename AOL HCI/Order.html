@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order</title>
+    <link rel="stylesheet" href="order.css">
+    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/menu.css' rel='stylesheet'>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <li><a href="home.html">Walker</a>
+        </div>
+        <div class="toggle">
+            <input type="checkbox">
+            <i class="gg-menu"></i></a>
+        </div>
+        <ul class="menu">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about-us.html">About Us</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="Order.html" class="on">Order</a></li>
+        </ul>
+    </nav>
+
+    <div class="form-container">
+        <div class="form">
+            <div class="left">
+                <form id="form" action="qris.html">
+                    <div class="dropdown">
+                        <select name="format" id="format" class="select">
+                            <option value="jordan">Air Jordan 1</option>
+                            <option value="suede">Lanvin Suede</option>
+                            <option value="550">New Balance 550</option>
+                            <option value="NMB">Adidas NMB Japan</option>
+                            <option value="stan">Adidas Stan Smith</option>
+                            <option value="vessi">Vessi</option>
+                            <option value="seamless">Tatum Seamless</option>
+                            <option value="taylor">Chuck Taylor All Star</option>
+                            <option value="metcon">Nike Metcon 8</option>
+                            <option value="1000">Asics GT-1000</option>
+                            <option value="PLR">Adidas X_PLR</option>
+                            <option value="checkerboard">Vans Classic Checkerboard</option>
+                        </select>
+                    </div>
+                    <div class="input-field">
+                        <input id="size" type="number" placeholder="Size (Europe)">
+                        <div class="error"></div>
+                    </div>
+                    <div class="input-field">
+                        <input id="name" type="text" placeholder="Name">
+                        <div class="error"></div>
+                    </div>
+                    <div class="input-field">
+                        <input id="address" type="text" placeholder="Address">
+                        <div class="error"></div>
+                    </div>
+                    <button class="sbt" type="submit">Confirm Order</button>
+                    <br>
+                    <a href="home.html">
+                        <button type="button" class="cncl">Cancel Order</button>
+                    </a>
+                </form>
+            </div>
+            <div class="right">
+                <img src="Assets/Walkerbanner.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <ul class="bottom">
+            <li><a href="contact-us.html">Contact Us</a></li>
+            <h5>|</h5>
+            <li><a href="about-us.html">About Walker</a></li>
+        </ul>
+
+        <p>©2023 walker Indonesia Limited</p>
+    </footer>
+
+    <script src="order.js"></script>
+</body>
+</html>
